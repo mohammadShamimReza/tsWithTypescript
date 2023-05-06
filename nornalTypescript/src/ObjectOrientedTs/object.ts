@@ -1,13 +1,17 @@
 class Animal {
-    name: string;
-    species: string;
-    sound: string;
-    constructor(name: string, species: string, sound: string) {
-        this.name = name;
-        this.species = species;
-        this.sound = sound;
+//    public name: string;
+//    public species: string;
+//    public sound: string;
+
+    // peramiter properties
+
+
+    constructor(public name: string,public species: string,public sound: string) {
+        // this.name = name;
+        // this.species = species;
+        // this.sound = sound;
     }
-    makeSound() { 
+   public makeSound() { 
         console.log(`The${this.name} say ${this.sound}`)
     }
 }
