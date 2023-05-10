@@ -1,49 +1,49 @@
-type User = {
-    name: string;
-    age: number;
-}
-
-interface IUser {
-    name: string;
-    age: number;
-}
-
-// const userWithTypeAlias: User = {
-//     name: 'type alias',
-//     age: 155
+// type User = {
+//     name: string;
+//     age: number;
 // }
 
-// userWithTypeAlias.name
-
-// const userWithInterfaces: IUser = {
-//     name: "interface",
-//     age: 155
+// interface IUser {
+//     name: string;
+//     age: number;
 // }
 
-// userWithInterfaces.age
+// // const userWithTypeAlias: User = {
+// //     name: 'type alias',
+// //     age: 155
+// // }
+
+// // userWithTypeAlias.name
+
+// // const userWithInterfaces: IUser = {
+// //     name: "interface",
+// //     age: 155
+// // }
+
+// // userWithInterfaces.age
 
 
-type TypeExtendedUser = User & {
-    role: string;
-}
+// type TypeExtendedUser = User & {
+//     role: string;
+// }
 
 
-const typeExtenduser: TypeExtendedUser = {
-    name: "extend user",
-    age: 23,
-    role: "extend user"
-}
+// const typeExtenduser: TypeExtendedUser = {
+//     name: "extend user",
+//     age: 23,
+//     role: "extend user"
+// }
 
-interface IextendedUser extends IUser {
-    role: string;
-}
+// interface IextendedUser extends IUser {
+//     role: string;
+// }
 
 
-const extendUser: IextendedUser = {
-    name: 'extended user',
-    age: 5555,
-    role: 'this is role'
-};
+// const extendUser: IextendedUser = {
+//     name: 'extended user',
+//     age: 5555,
+//     role: 'this is role'
+// };
 
 
 type RollNumberType = number[]

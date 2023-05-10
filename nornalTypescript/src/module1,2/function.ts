@@ -37,10 +37,10 @@ person.addBalance(500)
 
 type DescribableFunction = {
     description: string,
-    (someArg: number, todo: string): boolean;
+    (someArg: number): boolean;
 };
 function doSomething(fn: DescribableFunction) {
-    console.log(fn.description + 'returned' + fn(6, 'thii'))
+    console.log(fn.description + 'returned' + fn(6))
 }
 
 function myFunc(someArg: number) {
@@ -69,7 +69,7 @@ function returnSomething(fn: callSignature): void {
 // }
 
 function postFunction2(perm3: string, perm4: string): string {
-  return perm3 ;
+  return perm3 + perm4;
 }
 
 // 
